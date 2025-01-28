@@ -128,12 +128,13 @@ function DonationEditButton({ donation }) {
                                 Cancel
                             </button>
                             {submitSuccess ? (
-                                <a
-                                    href="/"
+                                <button
+                                    onClick={() => window.location.reload()}
+                                    type="button"
                                     className="w-full px-6 py-3 bg-gray-700 text-center rounded-lg text-sm font-medium text-white hover:opacity-90"
                                 >
                                     Reset
-                                </a>
+                                </button>
                             ) : (
                                 <button
                                     type="submit"

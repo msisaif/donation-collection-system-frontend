@@ -8,9 +8,9 @@ async function Header() {
                 <div className="container p-4 flex justify-between items-center">
                     <Link
                         href="/"
-                        className="uppercase text-brand border border-brand px-1 flex flex-col items-center"
+                        className="uppercase text-brand px-1 flex flex-col items-center"
                     >
-                        <span className="text-[16px] md:text-[20px] font-bold">
+                        <span className="text-[16px] md:text-[20px] font-bold border-b border-brand">
                             Donation
                         </span>
                         <span className="text-[9px] md:text-[11.25px]">

@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useState } from 'react';
 
 function DonationForm() {
@@ -195,12 +194,13 @@ function DonationForm() {
                     {/* Form Actions */}
                     <div className="flex items-center justify-end space-x-4">
                         {submitSuccess ? (
-                            <a
-                                href="/"
+                            <button
+                                onClick={() => window.location.reload()}
+                                type="button"
                                 className="w-full px-6 py-3 bg-gray-700 text-center rounded-lg text-sm font-medium text-white hover:opacity-90"
                             >
                                 Reset
-                            </a>
+                            </button>
                         ) : (
                             <button
                                 type="submit"
